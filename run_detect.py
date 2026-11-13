@@ -1,11 +1,11 @@
 import json
 import pandas as pd
-from core.detector import detect_zscore
+from core.detector import detect_all
 from core.evaluate import score
 
 df = pd.read_csv("data/synthetic_readings.csv", parse_dates=["timestamp"])
 truth = json.load(open("data/anomalies_truth.json"))
-events = detect_zscore(df)
+events = detect_all(df)
 r = score(events, truth)
 print(f"Detected events: {len(events)}")
 print(f"Found {len(r['found'])}/{len(truth)} injected anomalies")
