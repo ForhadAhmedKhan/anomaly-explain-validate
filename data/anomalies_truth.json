@@ -1,0 +1,83 @@
+[
+  {
+    "id": "A001",
+    "asset_id": "SUBSEA-01",
+    "sensor": "vibration",
+    "type": "spike",
+    "start": "2026-01-05 04:00:00",
+    "end": "2026-01-05 04:20:00",
+    "magnitude": 3.0
+  },
+  {
+    "id": "A002",
+    "asset_id": "SUBSEA-01",
+    "sensor": "pressure",
+    "type": "spike",
+    "start": "2026-01-07 06:00:00",
+    "end": "2026-01-07 06:20:00",
+    "magnitude": 25.0
+  },
+  {
+    "id": "A003",
+    "asset_id": "SUBSEA-01",
+    "sensor": "temperature",
+    "type": "spike",
+    "start": "2026-01-11 10:00:00",
+    "end": "2026-01-11 10:20:00",
+    "magnitude": 2.5
+  },
+  {
+    "id": "A004",
+    "asset_id": "SUBSEA-01",
+    "sensor": "vibration",
+    "type": "flatline",
+    "start": "2026-01-14 04:40:00",
+    "end": "2026-01-14 12:50:00",
+    "magnitude": null
+  },
+  {
+    "id": "A005",
+    "asset_id": "SUBSEA-01",
+    "sensor": "pressure",
+    "type": "drift",
+    "start": "2026-01-18 08:40:00",
+    "end": "2026-01-21 03:10:00",
+    "magnitude": 30.0
+  },
+  {
+    "id": "A006",
+    "asset_id": "SUBSEA-01",
+    "sensor": "temperature",
+    "type": "flatline",
+    "start": "2026-01-20 10:40:00",
+    "end": "2026-01-20 20:30:00",
+    "magnitude": null
+  },
+  {
+    "id": "A007",
+    "asset_id": "SUBSEA-01",
+    "sensor": "vibration",
+    "type": "spike",
+    "start": "2026-01-23 05:20:00",
+    "end": "2026-01-23 05:50:00",
+    "magnitude": 4.0
+  },
+  {
+    "id": "A008",
+    "asset_id": "SUBSEA-01",
+    "sensor": "temperature",
+    "type": "drift",
+    "start": "2026-01-25 07:20:00",
+    "end": "2026-01-27 09:10:00",
+    "magnitude": 3.0
+  },
+  {
+    "id": "A009",
+    "asset_id": "SUBSEA-01",
+    "sensor": "pressure",
+    "type": "dropout",
+    "start": "2026-01-27 09:20:00",
+    "end": "2026-01-27 11:10:00",
+    "magnitude": null
+  }
+]
