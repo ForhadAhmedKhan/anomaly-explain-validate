@@ -1,0 +1,170 @@
+[
+  {
+    "event_id": "D001",
+    "evidence": {
+      "event_id": "D001",
+      "asset_id": "SUBSEA-01",
+      "sensor": "vibration",
+      "rule": "zscore",
+      "start": "2026-01-05 04:00:00",
+      "end": "2026-01-05 04:20:00",
+      "points_in_event": 3,
+      "duration_minutes": 30,
+      "missing_points": 0,
+      "event_min": 4.99,
+      "event_max": 5.24,
+      "baseline_mean": 1.99,
+      "baseline_std": 0.17,
+      "peak_deviation_from_baseline": 3.25
+    },
+    "explanation": "A vibration anomaly was flagged on asset SUBSEA-01 for an event duration of 30 minutes between 2026-01-05 04:00:00 and 2026-01-05 04:20:00 across 3 data points. Readings reached an event minimum of 4.99 and an event maximum of 5.24, showing a peak deviation from baseline of 3.25 above the baseline mean of 1.99 (baseline standard deviation of 0.17). As a possible cause, this surge could indicate mechanical bearing wear.",
+    "model": "gemini-3.8-flash"
+  },
+  {
+    "event_id": "D003",
+    "evidence": {
+      "event_id": "D003",
+      "asset_id": "SUBSEA-01",
+      "sensor": "temperature",
+      "rule": "zscore",
+      "start": "2026-01-11 10:00:00",
+      "end": "2026-01-11 10:20:00",
+      "points_in_event": 3,
+      "duration_minutes": 30,
+      "missing_points": 0,
+      "event_min": 6.6,
+      "event_max": 6.73,
+      "baseline_mean": 4.01,
+      "baseline_std": 0.38,
+      "peak_deviation_from_baseline": 2.71
+    },
+    "explanation": "A temperature anomaly was flagged on asset SUBSEA-01, lasting 30 minutes across 3 recorded points. The recorded temperature reached between 6.6 and 6.73, representing a peak deviation of 2.71 above the baseline mean of 4.01 (baseline standard deviation 0.38). A possible cause for this elevation is a localized component overheating issue.",
+    "model": "gemini-3.5-flash"
+  },
+  {
+    "event_id": "D004",
+    "evidence": {
+      "event_id": "D004",
+      "asset_id": "SUBSEA-01",
+      "sensor": "vibration",
+      "rule": "flatline",
+      "start": "2026-01-14 04:40:00",
+      "end": "2026-01-14 12:50:00",
+      "points_in_event": 50,
+      "duration_minutes": 500,
+      "missing_points": 0,
+      "event_min": 2.21,
+      "event_max": 2.21,
+      "baseline_mean": 2.0,
+      "baseline_std": 0.16,
+      "peak_deviation_from_baseline": 0.21
+    },
+    "explanation": "The vibration sensor on asset SUBSEA-01 triggered a flatline anomaly, holding a constant reading of 2.21 for 500 minutes between 2026-01-14 04:40:00 and 2026-01-14 12:50:00. This fixed value represents a peak deviation of 0.21 from the baseline mean of 2.0 (which has a baseline standard deviation of 0.16) across 50 recorded points. A possible cause for this behavior is a frozen sensor output or failure in data transmission.",
+    "model": "gemini-3.5-flash"
+  },
+  {
+    "event_id": "D005",
+    "evidence": {
+      "event_id": "D005",
+      "asset_id": "SUBSEA-01",
+      "sensor": "temperature",
+      "rule": "flatline",
+      "start": "2026-01-20 10:40:00",
+      "end": "2026-01-20 20:30:00",
+      "points_in_event": 60,
+      "duration_minutes": 600,
+      "missing_points": 0,
+      "event_min": 4.23,
+      "event_max": 4.23,
+      "baseline_mean": 4.0,
+      "baseline_std": 0.37,
+      "peak_deviation_from_baseline": 0.23
+    },
+    "explanation": "The temperature sensor on asset SUBSEA-01 flatlined at a constant value of 4.23 across 60 points for a duration of 600 minutes, lasting from 2026-01-20 10:40:00 to 2026-01-20 20:30:00. Compared to the normal baseline mean of 4.0 with a standard deviation of 0.37, the event held a peak deviation from the baseline of 0.23. A possible cause for this behavior is a frozen sensor signal or communication stall.",
+    "model": "gemini-3.5-flash"
+  },
+  {
+    "event_id": "D006",
+    "evidence": {
+      "event_id": "D006",
+      "asset_id": "SUBSEA-01",
+      "sensor": "pressure",
+      "rule": "zscore",
+      "start": "2026-01-21 03:20:00",
+      "end": "2026-01-21 03:50:00",
+      "points_in_event": 4,
+      "duration_minutes": 40,
+      "missing_points": 0,
+      "event_min": 202.56,
+      "event_max": 205.12,
+      "baseline_mean": 224.67,
+      "baseline_std": 3.37,
+      "peak_deviation_from_baseline": 22.11
+    },
+    "explanation": "A pressure sensor anomaly was flagged on asset SUBSEA-01 across 4 recorded points, lasting for 40 minutes from 2026-01-21 03:20:00 to 2026-01-21 03:50:00. During this time, pressure values dropped to between 202.56 and 205.12 with a peak deviation from baseline of 22.11, significantly lower than the expected baseline mean of 224.67 and baseline standard deviation of 3.37. A possible cause for this drop is a temporary upstream valve restriction, though explicit diagnostic evidence in the dataset is missing.",
+    "model": "gemini-3.5-flash"
+  },
+  {
+    "event_id": "D007",
+    "evidence": {
+      "event_id": "D007",
+      "asset_id": "SUBSEA-01",
+      "sensor": "vibration",
+      "rule": "zscore",
+      "start": "2026-01-23 05:20:00",
+      "end": "2026-01-23 05:50:00",
+      "points_in_event": 4,
+      "duration_minutes": 40,
+      "missing_points": 0,
+      "event_min": 6.12,
+      "event_max": 6.34,
+      "baseline_mean": 1.99,
+      "baseline_std": 0.17,
+      "peak_deviation_from_baseline": 4.35
+    },
+    "explanation": "The vibration sensor on asset SUBSEA-01 detected an anomaly that lasted for 40 minutes, spanning 4 points between 2026-01-23 05:20:00 and 2026-01-23 05:50:00. During the event, readings ranged from 6.12 to 6.34 with a peak deviation of 4.35 from the baseline mean of 1.99 (baseline standard deviation of 0.17). A possible cause for this increased vibration could be mechanical imbalance, though this is only a potential explanation and not a confirmed fact.",
+    "model": "gemini-3.5-flash"
+  },
+  {
+    "event_id": "D008",
+    "evidence": {
+      "event_id": "D008",
+      "asset_id": "SUBSEA-01",
+      "sensor": "pressure",
+      "rule": "missing",
+      "start": "2026-01-27 09:20:00",
+      "end": "2026-01-27 11:10:00",
+      "points_in_event": 12,
+      "duration_minutes": 120,
+      "missing_points": 12,
+      "event_min": null,
+      "event_max": null,
+      "baseline_mean": 199.96,
+      "baseline_std": 3.65,
+      "peak_deviation_from_baseline": null
+    },
+    "explanation": "The pressure sensor on asset SUBSEA-01 experienced a missing data anomaly that lasted for 120 minutes with 12 missing points. Specific evidence comparing the event's magnitude to normal levels is missing because the event minimum, maximum, and peak deviation values are all null, though the baseline mean is normally 199.96 with a standard deviation of 3.65. A possible cause for this issue is a temporary failure in signal transmission or data logging.",
+    "model": "gemini-3.5-flash"
+  },
+  {
+    "event_id": "D002",
+    "evidence": {
+      "event_id": "D002",
+      "asset_id": "SUBSEA-01",
+      "sensor": "pressure",
+      "rule": "zscore",
+      "start": "2026-01-07 06:00:00",
+      "end": "2026-01-07 06:20:00",
+      "points_in_event": 3,
+      "duration_minutes": 30,
+      "missing_points": 0,
+      "event_min": 229.83,
+      "event_max": 230.39,
+      "baseline_mean": 199.94,
+      "baseline_std": 3.64,
+      "peak_deviation_from_baseline": 30.45
+    },
+    "explanation": "The pressure sensor on asset SUBSEA-01 flagged an anomaly lasting 30 minutes, recording 3 points between 2026-01-07 06:00:00 and 2026-01-07 06:20:00. During the event, values reached a maximum of 230.39 (minimum 229.83), creating a peak deviation from baseline of 30.45 above the baseline mean of 199.94 (baseline std of 3.64). A possible cause could be a downstream line restriction, though direct evidence confirming the root cause is missing from the data.",
+    "model": "gemini-3.5-flash"
+  }
+]
