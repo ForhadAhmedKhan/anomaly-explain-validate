@@ -1,2 +1,4 @@
 D008 passed the hardest honesty test. Min, max, and peak deviation were null, and Gemini said so instead of inventing readings.
 D006 is the most interesting one. Gemini’s explanation is faithful to its evidence, but the evidence itself is misleading. Its baseline_mean is 224.67, while other pressure events show about 200. The “normal” baseline was already inflated by the undetected pressure drift. So Gemini honestly explained a bad detection and offered a “valve restriction” cause that is really an artifact of the data. This means i need two layers of validation: (a) does the explanation match the evidence, and (b) is the evidence itself sane? A later check can compare each baseline against that sensor’s long-run median.
+D008 admitted the missing data.
+D006’s baseline is inflated by the undetected drift.
